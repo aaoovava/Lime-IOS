@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		627290502B193F170059A83F /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6272904F2B193F170059A83F /* InputView.swift */; };
 		62B17C7A2B124DB8007903DB /* Lime_IOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B17C792B124DB8007903DB /* Lime_IOSApp.swift */; };
-		62B17C7C2B124DB8007903DB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B17C7B2B124DB8007903DB /* ContentView.swift */; };
+		62B17C7C2B124DB8007903DB /* Sing_in_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B17C7B2B124DB8007903DB /* Sing_in_view.swift */; };
 		62B17C7E2B124DBA007903DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62B17C7D2B124DBA007903DB /* Assets.xcassets */; };
 		62B17C812B124DBA007903DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62B17C802B124DBA007903DB /* Preview Assets.xcassets */; };
 		62B17C8B2B124DBA007903DB /* Lime_IOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B17C8A2B124DBA007903DB /* Lime_IOSTests.swift */; };
@@ -35,9 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6272904F2B193F170059A83F /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InputView.swift; path = ../../../../../../Downloads/InputView.swift; sourceTree = "<group>"; };
 		62B17C762B124DB8007903DB /* Lime IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lime IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62B17C792B124DB8007903DB /* Lime_IOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lime_IOSApp.swift; sourceTree = "<group>"; };
-		62B17C7B2B124DB8007903DB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		62B17C7B2B124DB8007903DB /* Sing_in_view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sing_in_view.swift; sourceTree = "<group>"; };
 		62B17C7D2B124DBA007903DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		62B17C802B124DBA007903DB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		62B17C862B124DBA007903DB /* Lime IOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lime IOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -150,6 +152,7 @@
 		62B17CA52B12A613007903DB /* Componets */ = {
 			isa = PBXGroup;
 			children = (
+				6272904F2B193F170059A83F /* InputView.swift */,
 			);
 			path = Componets;
 			sourceTree = "<group>";
@@ -165,7 +168,7 @@
 		62B17CA72B12A6DB007903DB /* SIng in */ = {
 			isa = PBXGroup;
 			children = (
-				62B17C7B2B124DB8007903DB /* ContentView.swift */,
+				62B17C7B2B124DB8007903DB /* Sing_in_view.swift */,
 			);
 			path = "SIng in";
 			sourceTree = "<group>";
@@ -308,7 +311,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62B17C7C2B124DB8007903DB /* ContentView.swift in Sources */,
+				62B17C7C2B124DB8007903DB /* Sing_in_view.swift in Sources */,
+				627290502B193F170059A83F /* InputView.swift in Sources */,
 				62B17CAA2B12A783007903DB /* Sing_up_view.swift in Sources */,
 				62B17C7A2B124DB8007903DB /* Lime_IOSApp.swift in Sources */,
 			);
