@@ -16,7 +16,12 @@ struct ContentView: View {
                 .frame(width: 279, height: 114)
                 .padding(.vertical, 92)
                 Spacer()
-            
+            Text("1")
+                .foregroundColor(Color(red: 0.3, green: 0.34, blue: 0.4))
+                .font(.custom("Inter-Regular", size:40))
+            Text("1")
+                .foregroundColor(Color(red: 0.3, green: 0.34, blue: 0.4))
+                .font(.custom("Inter-", size:40))
                 //douwn button
             
         }

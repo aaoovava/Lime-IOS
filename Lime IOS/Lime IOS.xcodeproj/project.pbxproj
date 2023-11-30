@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		627290502B193F170059A83F /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6272904F2B193F170059A83F /* InputView.swift */; };
+		620343F12B19416C00735F03 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620343F02B19416C00735F03 /* InputView.swift */; };
+		620344002B1957F300735F03 /* Inter-VariableFont_slnt,wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 620343FF2B1957F300735F03 /* Inter-VariableFont_slnt,wght.ttf */; };
 		62B17C7A2B124DB8007903DB /* Lime_IOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B17C792B124DB8007903DB /* Lime_IOSApp.swift */; };
 		62B17C7C2B124DB8007903DB /* Sing_in_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B17C7B2B124DB8007903DB /* Sing_in_view.swift */; };
 		62B17C7E2B124DBA007903DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62B17C7D2B124DBA007903DB /* Assets.xcassets */; };
@@ -36,7 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6272904F2B193F170059A83F /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InputView.swift; path = ../../../../../../Downloads/InputView.swift; sourceTree = "<group>"; };
+		620343F02B19416C00735F03 /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
+		620343FE2B1952AA00735F03 /* Lime-IOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Lime-IOS-Info.plist"; sourceTree = SOURCE_ROOT; };
+		620343FF2B1957F300735F03 /* Inter-VariableFont_slnt,wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-VariableFont_slnt,wght.ttf"; sourceTree = "<group>"; };
 		62B17C762B124DB8007903DB /* Lime IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lime IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62B17C792B124DB8007903DB /* Lime_IOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lime_IOSApp.swift; sourceTree = "<group>"; };
 		62B17C7B2B124DB8007903DB /* Sing_in_view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sing_in_view.swift; sourceTree = "<group>"; };
@@ -75,9 +78,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		620343EF2B19413800735F03 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				620343F02B19416C00735F03 /* InputView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		620343F22B19456200735F03 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				620343FF2B1957F300735F03 /* Inter-VariableFont_slnt,wght.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		62B17C6D2B124DB7007903DB = {
 			isa = PBXGroup;
 			children = (
+				620343F22B19456200735F03 /* Fonts */,
+				620343EF2B19413800735F03 /* Components */,
 				62B17C782B124DB8007903DB /* Lime IOS */,
 				62B17C892B124DBA007903DB /* Lime IOSTests */,
 				62B17C932B124DBA007903DB /* Lime IOSUITests */,
@@ -98,8 +119,8 @@
 		62B17C782B124DB8007903DB /* Lime IOS */ = {
 			isa = PBXGroup;
 			children = (
+				620343FE2B1952AA00735F03 /* Lime-IOS-Info.plist */,
 				62B17CA62B12A619007903DB /* App */,
-				62B17CA52B12A613007903DB /* Componets */,
 				62B17CA42B12A60F007903DB /* Core */,
 				62B17CA32B12A5E3007903DB /* Model */,
 				62B17C7D2B124DBA007903DB /* Assets.xcassets */,
@@ -147,14 +168,6 @@
 				62B17CA72B12A6DB007903DB /* SIng in */,
 			);
 			path = Core;
-			sourceTree = "<group>";
-		};
-		62B17CA52B12A613007903DB /* Componets */ = {
-			isa = PBXGroup;
-			children = (
-				6272904F2B193F170059A83F /* InputView.swift */,
-			);
-			path = Componets;
 			sourceTree = "<group>";
 		};
 		62B17CA62B12A619007903DB /* App */ = {
@@ -244,6 +257,9 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				KnownAssetTags = (
+					New,
+				);
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
@@ -286,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				62B17C812B124DBA007903DB /* Preview Assets.xcassets in Resources */,
+				620344002B1957F300735F03 /* Inter-VariableFont_slnt,wght.ttf in Resources */,
 				62B17C7E2B124DBA007903DB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,7 +329,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				62B17C7C2B124DB8007903DB /* Sing_in_view.swift in Sources */,
-				627290502B193F170059A83F /* InputView.swift in Sources */,
+				620343F12B19416C00735F03 /* InputView.swift in Sources */,
 				62B17CAA2B12A783007903DB /* Sing_up_view.swift in Sources */,
 				62B17C7A2B124DB8007903DB /* Lime_IOSApp.swift in Sources */,
 			);
@@ -460,6 +477,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				"INFOPLIST_FILE[sdk=*]" = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -480,6 +498,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Lime IOS/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Lime-IOS-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -508,6 +527,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Lime IOS/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Lime-IOS-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
