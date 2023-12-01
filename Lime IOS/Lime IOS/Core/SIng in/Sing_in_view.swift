@@ -8,21 +8,42 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var email: String = ""
+    @State private var pass: String = ""
+    private var height: Int = Int(UIScreen.main.bounds.height)
+    private var width: Int = Int(UIScreen.main.bounds.width)
+    
     var body: some View {
         VStack {
             Image("Sing in imge")
                 .resizable()
                 .scaledToFit()
-                .frame(width: 279, height: 114)
-                .padding(.vertical, 92)
+                .frame(width: CGFloat(width) * 0.8, height: CGFloat(height) * 0.15)
+                .padding(.vertical, 180)
+                .padding(.bottom, -CGFloat(width) * 0.3)
+            NavigationLink{
+                
+            }label:{
+                HStack{
+                    Image("Txt to sing up")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: CGFloat(width) * 0.6,height: CGFloat(height) * 0.025)
+                }
+                
+            }
+            
+            VStack(spacing: 30){
+               InputView(text: $email, title: "Телефон", plaseHolder: "")
+                    .padding(.top,30)
+                    .padding(.horizontal,CGFloat(width) * 0.15)
+                InputView(text: $pass, title: "Пароль", plaseHolder: "",isSecureField: true)
+                    .padding(.horizontal,CGFloat(width) * 0.15)
+            }
+            
+            
                 Spacer()
-            Text("1")
-                .foregroundColor(Color(red: 0.3, green: 0.34, blue: 0.4))
-                .font(.custom("Inter-Regular", size:40))
-            Text("1")
-                .foregroundColor(Color(red: 0.3, green: 0.34, blue: 0.4))
-                .font(.custom("Inter-", size:40))
-                //douwn button
+            
             
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
