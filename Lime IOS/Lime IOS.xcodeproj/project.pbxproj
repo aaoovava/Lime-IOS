@@ -17,6 +17,7 @@
 		62B17C952B124DBA007903DB /* Lime_IOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B17C942B124DBA007903DB /* Lime_IOSUITests.swift */; };
 		62B17C972B124DBA007903DB /* Lime_IOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B17C962B124DBA007903DB /* Lime_IOSUITestsLaunchTests.swift */; };
 		62B17CAA2B12A783007903DB /* Sing_up_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B17CA92B12A783007903DB /* Sing_up_view.swift */; };
+		62B476622B1E836C002C1717 /* SwipeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B476612B1E836C002C1717 /* SwipeButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		62B17C942B124DBA007903DB /* Lime_IOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lime_IOSUITests.swift; sourceTree = "<group>"; };
 		62B17C962B124DBA007903DB /* Lime_IOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lime_IOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		62B17CA92B12A783007903DB /* Sing_up_view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sing_up_view.swift; sourceTree = "<group>"; };
+		62B476612B1E836C002C1717 /* SwipeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				620343F02B19416C00735F03 /* InputView.swift */,
+				62B476612B1E836C002C1717 /* SwipeButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 				62B17C7C2B124DB8007903DB /* Sing_in_view.swift in Sources */,
 				620343F12B19416C00735F03 /* InputView.swift in Sources */,
 				62B17CAA2B12A783007903DB /* Sing_up_view.swift in Sources */,
+				62B476622B1E836C002C1717 /* SwipeButton.swift in Sources */,
 				62B17C7A2B124DB8007903DB /* Lime_IOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
