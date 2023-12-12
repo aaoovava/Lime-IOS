@@ -18,6 +18,7 @@
 		62B17C972B124DBA007903DB /* Lime_IOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B17C962B124DBA007903DB /* Lime_IOSUITestsLaunchTests.swift */; };
 		62B17CAA2B12A783007903DB /* Sing_up_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B17CA92B12A783007903DB /* Sing_up_view.swift */; };
 		62B476622B1E836C002C1717 /* SwipeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B476612B1E836C002C1717 /* SwipeButton.swift */; };
+		62FAEBC82B28EA3200D2346E /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FAEBC72B28EA3200D2346E /* FirstView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		62B17C962B124DBA007903DB /* Lime_IOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lime_IOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		62B17CA92B12A783007903DB /* Sing_up_view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sing_up_view.swift; sourceTree = "<group>"; };
 		62B476612B1E836C002C1717 /* SwipeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeButton.swift; sourceTree = "<group>"; };
+		62FAEBC72B28EA3200D2346E /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 		62B17CA42B12A60F007903DB /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				62FAEBC62B28EA0500D2346E /* First View */,
 				62B17CA82B12A723007903DB /* Sing up */,
 				62B17CA72B12A6DB007903DB /* SIng in */,
 			);
@@ -195,6 +198,14 @@
 				62B17CA92B12A783007903DB /* Sing_up_view.swift */,
 			);
 			path = "Sing up";
+			sourceTree = "<group>";
+		};
+		62FAEBC62B28EA0500D2346E /* First View */ = {
+			isa = PBXGroup;
+			children = (
+				62FAEBC72B28EA3200D2346E /* FirstView.swift */,
+			);
+			path = "First View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,6 +343,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				62B17C7C2B124DB8007903DB /* Sing_in_view.swift in Sources */,
+				62FAEBC82B28EA3200D2346E /* FirstView.swift in Sources */,
 				620343F12B19416C00735F03 /* InputView.swift in Sources */,
 				62B17CAA2B12A783007903DB /* Sing_up_view.swift in Sources */,
 				62B476622B1E836C002C1717 /* SwipeButton.swift in Sources */,

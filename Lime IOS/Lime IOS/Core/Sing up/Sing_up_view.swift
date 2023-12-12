@@ -16,7 +16,7 @@ struct Sing_up_view: View {
     private var height: Int = Int(UIScreen.main.bounds.height)
     private var width: Int = Int(UIScreen.main.bounds.width)
     var body: some View {
-        NavigationView{
+        NavigationStack{
             VStack{
                 Image("Sing up")
                     .frame(width: CGFloat(width) * 0.8, height: CGFloat(height) * 0.09)

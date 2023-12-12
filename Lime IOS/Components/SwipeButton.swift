@@ -15,6 +15,13 @@ extension CGSize {
     }
     
 }
+extension SwipeButton{
+    func onSwipeSuccess(_ action: @escaping () -> Void)->Self{
+        var this = self
+        this.actionSeccsess = action
+        return this
+    }
+}
 
 extension Comparable
 {
@@ -26,7 +33,9 @@ extension Comparable
 struct SwipeButton: View {
     let trackSize = CGSize.trackSize
     let thumbSize = CGSize.thumbSize
+    @State private var isEnough = false
     @State private var dragOffset: CGSize = .zero;
+    var actionSeccsess: (() -> Void)?
     let title: String
     var body: some View {
         ZStack(){
@@ -62,9 +71,29 @@ struct SwipeButton: View {
     //hendlers
     private func handleDragChanged(value:DragGesture.Value) ->Void{
         self.dragOffset = value.translation
+        let dragWidth = value.translation.width
+        let targetDragWidth = self.trackSize.width - (self.thumbSize.width*2)
+        let didReachTarget = dragWidth > targetDragWidth
+        if didReachTarget{
+            
+            self.isEnough = true
+        }
+        else{
+            
+            self.isEnough = false
+            
+        }
     }
     private func handleDragEnded() ->Void{
-        self.dragOffset = .zero
+        if self.isEnough{
+            if nil != self.actionSeccsess{
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.25){
+                    self.actionSeccsess!()
+                }
+            }
+        }else{
+            self.dragOffset = .zero
+        }
     }
 }
 
