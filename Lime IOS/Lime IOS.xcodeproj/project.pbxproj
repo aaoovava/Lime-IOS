@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		620343F12B19416C00735F03 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620343F02B19416C00735F03 /* InputView.swift */; };
 		620344002B1957F300735F03 /* Inter-VariableFont_slnt,wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 620343FF2B1957F300735F03 /* Inter-VariableFont_slnt,wght.ttf */; };
+		626BCF9A2C405E3300A2A798 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626BCF992C405E3300A2A798 /* User.swift */; };
 		62B17C7A2B124DB8007903DB /* Lime_IOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B17C792B124DB8007903DB /* Lime_IOSApp.swift */; };
 		62B17C7C2B124DB8007903DB /* Sing_in_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B17C7B2B124DB8007903DB /* Sing_in_view.swift */; };
 		62B17C7E2B124DBA007903DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62B17C7D2B124DBA007903DB /* Assets.xcassets */; };
@@ -42,6 +43,7 @@
 		620343F02B19416C00735F03 /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
 		620343FE2B1952AA00735F03 /* Lime-IOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Lime-IOS-Info.plist"; sourceTree = SOURCE_ROOT; };
 		620343FF2B1957F300735F03 /* Inter-VariableFont_slnt,wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-VariableFont_slnt,wght.ttf"; sourceTree = "<group>"; };
+		626BCF992C405E3300A2A798 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		62B17C762B124DB8007903DB /* Lime IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lime IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62B17C792B124DB8007903DB /* Lime_IOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lime_IOSApp.swift; sourceTree = "<group>"; };
 		62B17C7B2B124DB8007903DB /* Sing_in_view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sing_in_view.swift; sourceTree = "<group>"; };
@@ -97,6 +99,31 @@
 				620343FF2B1957F300735F03 /* Inter-VariableFont_slnt,wght.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		626BCF962C405BD000A2A798 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				62FAEBC62B28EA0500D2346E /* First View */,
+				62B17CA82B12A723007903DB /* Sing up */,
+				62B17CA72B12A6DB007903DB /* SIng in */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		626BCF972C405DD300A2A798 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		626BCF982C405DFA00A2A798 /* DataRcords */ = {
+			isa = PBXGroup;
+			children = (
+				626BCF992C405E3300A2A798 /* User.swift */,
+			);
+			path = DataRcords;
 			sourceTree = "<group>";
 		};
 		62B17C6D2B124DB7007903DB = {
@@ -169,9 +196,9 @@
 		62B17CA42B12A60F007903DB /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				62FAEBC62B28EA0500D2346E /* First View */,
-				62B17CA82B12A723007903DB /* Sing up */,
-				62B17CA72B12A6DB007903DB /* SIng in */,
+				626BCF982C405DFA00A2A798 /* DataRcords */,
+				626BCF972C405DD300A2A798 /* Services */,
+				626BCF962C405BD000A2A798 /* Views */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -348,6 +375,7 @@
 				62B17CAA2B12A783007903DB /* Sing_up_view.swift in Sources */,
 				62B476622B1E836C002C1717 /* SwipeButton.swift in Sources */,
 				62B17C7A2B124DB8007903DB /* Lime_IOSApp.swift in Sources */,
+				626BCF9A2C405E3300A2A798 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

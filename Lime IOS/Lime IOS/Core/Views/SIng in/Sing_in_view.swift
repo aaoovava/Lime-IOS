@@ -58,7 +58,6 @@ struct ContentView: View {
                         isPresented: $didUnlock
                     ) {
                         FirstView()
-                        EmptyView()
                     }
                     
                     
