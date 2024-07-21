@@ -65,12 +65,14 @@ struct SwipeButton: View {
     }
     //helpers
     private func getClampedDragOffsetX() -> CGFloat {
-        let clampedDragOffsetX = dragOffset.width.clamp(lower: 3, trackSize.width - thumbSize.width)
+        let clampedDragOffsetX = dragOffset.width.clamp(lower: 3, trackSize.width - (thumbSize.width + 3))
         return -(trackSize.width/2 - thumbSize.width/2 - (clampedDragOffsetX))
         }
     //hendlers
     private func handleDragChanged(value:DragGesture.Value) ->Void{
         self.dragOffset = value.translation
+        
+        print(self.dragOffset)
         let dragWidth = value.translation.width
         let targetDragWidth = self.trackSize.width - (self.thumbSize.width*2)
         let didReachTarget = dragWidth > targetDragWidth
