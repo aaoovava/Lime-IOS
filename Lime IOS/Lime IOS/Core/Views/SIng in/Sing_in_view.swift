@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct SingIn: View {
     @State private var phone: String = ""
     @State private var pass: String = ""
     @State private var showUnlock = true
@@ -95,5 +95,5 @@ struct ContentView: View {
 
 
 #Preview {
-    ContentView()
+    SingIn()
 }

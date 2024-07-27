@@ -11,7 +11,7 @@ import SwiftUI
 struct Lime_IOSApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SingIn()
         }
     }
 }

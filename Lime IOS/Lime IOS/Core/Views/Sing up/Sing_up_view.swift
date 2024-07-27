@@ -35,7 +35,7 @@ struct Sing_up_view: View {
                     InputView(text: $repass, title: "Підтвердіть ваш пароль", plaseHolder: "",isSecureField: true)
                         .padding(.horizontal,CGFloat(width) * 0.15)
                     
-                    NavigationLink(destination: ContentView()){
+                    NavigationLink(destination: SingIn()){
                     
                         HStack{
                             Image("Txt to sing in")
