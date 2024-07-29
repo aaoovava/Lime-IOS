@@ -9,20 +9,20 @@ final class User {
     private var _error: String = ""
     private var _abonimentEndDate: String
     private var _abonimentStartDate: String
-    private var _abonimentStatus: Int
+    private var _abonimentStatus: String
     private var _afreezeDate: String
-    private var _afreezeDays: Int
+    private var _afreezeDays: String
     private var _age: String
-    private var _countOfGT: Int
+    private var _countOfGT: String
     private var _gfreezeDate: String
-    private var _gfreezeDays: Int
+    private var _gfreezeDays: String
     private var _groupTEndDate: String
     private var _groupTStartDate: String
-    private var _groupTStatus: Int
+    private var _groupTStatus: String
     private var _image: String
     private var _userBuys: [String: UserBuy]
     
-    private init(name: String, date: String, phone: String, password: String, error: String, abonimentEndDate: String, abonimentStartDate: String, abonimentStatus: Int, afreezeDate: String, afreezeDays: Int, age: String, countOfGT: Int, gfreezeDate: String, gfreezeDays: Int, groupTEndDate: String, groupTStartDate: String, groupTStatus: Int, image: String, userBuys: [String: UserBuy]) {
+    private init(name: String, date: String, phone: String, password: String, error: String, abonimentEndDate: String, abonimentStartDate: String, abonimentStatus: String, afreezeDate: String, afreezeDays: String, age: String, countOfGT: String, gfreezeDate: String, gfreezeDays: String, groupTEndDate: String, groupTStartDate: String, groupTStatus: String, image: String, userBuys: [String: UserBuy]) {
         self._name = name
         self._date = date
         self._phone = phone
@@ -46,7 +46,7 @@ final class User {
     
     static func createUser(name: String, date: String, phone: String, password: String, repass: String) -> User {
         let defaultDate = "--.--.----"
-        let defaultStatus = 3
+        let defaultStatus = "3"
 
         func createUserWithError(_ error: String) -> User {
             return User(
@@ -59,11 +59,11 @@ final class User {
                 abonimentStartDate: defaultDate,
                 abonimentStatus: defaultStatus,
                 afreezeDate: defaultDate,
-                afreezeDays: 0,
+                afreezeDays: "0",
                 age: "",
-                countOfGT: 0,
+                countOfGT: "0",
                 gfreezeDate: defaultDate,
-                gfreezeDays: 0,
+                gfreezeDays: "0",
                 groupTEndDate: defaultDate,
                 groupTStartDate: defaultDate,
                 groupTStatus: defaultStatus,
@@ -98,11 +98,11 @@ final class User {
             abonimentStartDate: defaultDate,
             abonimentStatus: defaultStatus,
             afreezeDate: defaultDate,
-            afreezeDays: 0,
+            afreezeDays: "0",
             age: "",
-            countOfGT: 0,
+            countOfGT: "0",
             gfreezeDate: defaultDate,
-            gfreezeDays: 0,
+            gfreezeDays: "0",
             groupTEndDate: defaultDate,
             groupTStartDate: defaultDate,
             groupTStatus: defaultStatus,
@@ -159,43 +159,96 @@ final class User {
             error: "",
             abonimentEndDate: abonimentEndDate,
             abonimentStartDate: abonimentStartDate,
-            abonimentStatus: Int(abonimentStatus) ?? 0,
+            abonimentStatus: abonimentStatus,
             afreezeDate: afreezeDate,
-            afreezeDays: Int(afreezeDays) ?? 0,
+            afreezeDays: afreezeDays,
             age: age,
-            countOfGT: Int(countOfGT) ?? 0,
+            countOfGT: countOfGT,
             gfreezeDate: gfreezeDate,
-            gfreezeDays: Int(gfreezeDays) ?? 0,
+            gfreezeDays: gfreezeDays,
             groupTEndDate: groupTEndDate,
             groupTStartDate: groupTStartDate,
-            groupTStatus: Int(groupTStatus) ?? 0,
+            groupTStatus: groupTStatus,
             image: image,
             userBuys: userBuys
         )
     }
     
+    // Public getters for private variables
+    var name: String {
+        return _name
+    }
+    
+    var date: String {
+        return _date
+    }
+    
     var phone: String {
-        get {
-            return _phone
-        }
-        set {
-            _phone = newValue
-        }
+        return _phone
     }
     
     var password: String {
-        get {
-            return _password
-        }
-        set {
-            _password = newValue
-        }
+        return _password
     }
     
     var error: String {
-        get {
-            return _error
-        }
+        return _error
+    }
+    
+    var abonimentEndDate: String {
+        return _abonimentEndDate
+    }
+    
+    var abonimentStartDate: String {
+        return _abonimentStartDate
+    }
+    
+    var abonimentStatus: String {
+        return _abonimentStatus
+    }
+    
+    var afreezeDate: String {
+        return _afreezeDate
+    }
+    
+    var afreezeDays: String {
+        return _afreezeDays
+    }
+    
+    var age: String {
+        return _age
+    }
+    
+    var countOfGT: String {
+        return _countOfGT
+    }
+    
+    var gfreezeDate: String {
+        return _gfreezeDate
+    }
+    
+    var gfreezeDays: String {
+        return _gfreezeDays
+    }
+    
+    var groupTEndDate: String {
+        return _groupTEndDate
+    }
+    
+    var groupTStartDate: String {
+        return _groupTStartDate
+    }
+    
+    var groupTStatus: String {
+        return _groupTStatus
+    }
+    
+    var image: String {
+        return _image
+    }
+    
+    var userBuys: [String: UserBuy] {
+        return _userBuys
     }
 }
 
